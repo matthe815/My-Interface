@@ -7,7 +7,7 @@ and add a few lines of code, and it will be fully functional.
 View the example below to see how to get started.
 
 ## Example:
-```js
+
 const inter = require('my-interface');
 const em = inter.getInterface();
 
@@ -17,7 +17,6 @@ em.on('command', (cmd) => {
 	    console.log("Pong!");
 	}
 });
-```
 
 The code above will case a simple command line interface that you can type "ping" into in order for it to reply pong.
 Once you use the command, it will be ready for another command to be inputed.
