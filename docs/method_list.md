@@ -10,19 +10,19 @@ Index
 ### Prompting Information
 [**INTERFACE**.prompt()](#prompt)
 
-[**INTERFACE**.getQuestion(**BOOLEAN**)](#getQuestion) ***`DEPRECATED`***
+[**INTERFACE**.getQuestion(**BOOLEAN**)](#getquestion) ***`DEPRECATED`***
 
-[**INTERFACE**.setPrompt(**STRING**)](#setPrompt)
+[**INTERFACE**.setPrompt(**STRING**)](#setprompt)
 
 
 ### Activity Information
-[**INTERFACE**.isActive()](#isActive)
+[**INTERFACE**.isActive()](#isactive)
 
-[**INTERFACE**.setActive(**BOOLEAN**)](#setActive)
+[**INTERFACE**.setActive(**BOOLEAN**)](#setactive)
 
 
 ### Interface Information.
-[**INTERFACE_Module**.getInferface()](#getInterface)
+[**INTERFACE_Module**.getInferface()](#getinterface)
 
 
 ### prompt
