@@ -15,6 +15,7 @@ View the example below to see how to get started.
 Implementation
 ----------------------------------------
 
+### Example:
 ```js
 const inter = require('my-interface');
 const em = inter.getInterface();
@@ -47,10 +48,10 @@ inter.getQuestion(true)
 Other Information
 ------------------------------------------
 
-You can view the full docs here:
+### You can view the full docs here:
 https://my-interface.readthedocs.org/
 
-And you can join the Discord Server with:
+### And you can join the Discord Server with:
 https://discord.gg/QKwQdgX
 
 Thanks!
