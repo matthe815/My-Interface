@@ -1,5 +1,6 @@
 const readline = require('readline');
 const EventEmitter = require('events');
+const prompts = require('./Classes/PromptInfo.js');
 var active = true;
 var ask = true;
 
@@ -13,23 +14,48 @@ const rl = readline.createInterface({
 });
 
 // Pull up the box.
-getQuestion();
+prompt();
 
-function getQuestion(forced=false)
+// Handle prompts.
+function prompt(forced=false)
 {
+    // If it's active, and asking or forced.
     if (ask && active || forced)
 	{
-        rl.question('Input a command\n', (answer) => {
+	    // Ask a question.
+        rl.question(prompts.getPrompt() + '\n', (answer) => {
             ask = true;
-		    console.log(ask + " " + active);
-            myEmitter.emit('command', answer);
-			getQuestion();
+			
+			// Handle arguments.
+			answer = answer.split(" ");
+			
+			// Emit that question to the program.
+            myEmitter.emit('command', answer[0], answer.slice(1,answer.length));
+			
+			// And ask again.
+            prompt();
         });
 	}
 }
 
+exports.setPrompt = function(text="Input a command") {
+    prompts.setText(text);
+	ask = true;
+	prompt();
+}
+
+exports.promptInfo = prompts;
+
 exports.getQuestion = function(forced=false) {
-    getQuestion(forced);
+    prompt(forced);
+}
+
+exports.prompt = function() {
+    prompt(true);
+}
+
+exports.isActive = function() {
+    return active;
 }
 
 exports.getInterface = function() {
@@ -40,7 +66,6 @@ exports.setActive = function(answer) {
   if (typeof answer == "boolean")
   {
       active = answer;
-      console.log("Set interface to: " + answer);
-	  getQuestion();
+	  prompt();
   }
 }
