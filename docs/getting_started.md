@@ -17,6 +17,7 @@ Implementation
 
 ### Example:
 
+```js
 const inter = require('my-interface');
 const em = inter.getInterface();
 
@@ -26,33 +27,35 @@ em.on('command', (cmd, args) => {
 	    console.log("Pong!");
 	}
 });
+```
 
 The code above will case a simple command line interface that you can type "ping" into in order for it to reply pong. Once you use the command, it will be ready for another command to be inputed.
 
 You can ALSO use:
 
-inter.setActive(true/false);
+`inter.setActive(true/false);`
 to enable/disable the command system. And you can forcefully request another command using
 
-inter.prompt()
-Note: inter.getQuestion(isForced) has been changed to inter.prompt() in version 0.0.3, getQuestion will still work for a little while however.
+`inter.prompt()`
 
-"true" meaning the command will be forced, regardless if the system is active or not.
 
 Changing Prompt Text
 ----------------------------------
 Version 0.0.3 has introduced the ability to change the prompt text, and added arguments that are passed along in an array. You can change the prompt text by doing:
 
-inter.setPrompt("Text goes here.");
+`inter.setPrompt("Text goes here.");`
 This will internally save the information you've told it to change.
 
 If you want to check if the system is active, you can do:
 
-inter.isActive()
+`inter.isActive();`
+
 And it will return true/false depending on the active status.
 
 Notes
 ------------------------------------------
+
+`inter.getQuestion(isForced)` has been changed to `inter.prompt()` in version 0.0.3, getQuestion will still work for a little while however.
 
 This no longer applies in version 0.0.3, it will always activate when called.
 
