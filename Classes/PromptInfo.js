@@ -8,8 +8,10 @@ exports.PromptInfo = function(defaultText="Input a command")
     // Set the new text.
     data["text"] = defaultText;
 	
-	// Save the data internally.
-	fs.writeFileSync("./data/savedData.json", JSON.stringify(data));
+    // Save the data internally.
+    if (!fs.existsSync("/data")) { fs.mkdir("/data") };
+	
+    fs.writeFileSync("./data/savedData.json", JSON.stringify(data));
 }
 
 exports.getUseTimes = function()
@@ -29,6 +31,8 @@ exports.setText = function(newText)
     // Set the new text.
     data["text"] = newText;
 	
-	// Save the data internally.
-	fs.writeFileSync("data/savedData.json", JSON.stringify(data));
+    // Save the data internally.
+    if (!fs.existsSync("/data")) { fs.mkdir("/data") };
+	
+    fs.writeFileSync("./data/savedData.json", JSON.stringify(data));
 }
