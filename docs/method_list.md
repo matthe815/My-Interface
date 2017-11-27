@@ -10,7 +10,7 @@ Index
 ### Prompting Information
 [**INTERFACE**.prompt()](#prompt)
 
-[**INTERFACE**.getQuestion(**<BOOLEAN**)](#getQuestion) ***`DEPRECATED`***
+[**INTERFACE**.getQuestion(**BOOLEAN**)](#getQuestion) ***`DEPRECATED`***
 
 [**INTERFACE**.setPrompt(**STRING**)](#setPrompt)
 
