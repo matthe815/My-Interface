@@ -1,6 +1,8 @@
 Getting Started
 =========================================
 
+Introduction
+-----------------------------------------
 Welcome to My-Interface!
 
 The easiest way to integrate Console Commands into your NodeJS project.
@@ -9,6 +11,9 @@ It's very simple to use, just install it with "npm install my-interface"
 and add a few lines of code, and it will be fully functional.
 
 View the example below to see how to get started.
+
+Implementation
+----------------------------------------
 
 ## Example:
 ```js
@@ -39,6 +44,9 @@ inter.getQuestion(true)
 ```
 
 "true" meaning the command will be forced, regardless if the system is active or not.
+
+Other Information
+------------------------------------------
 
 ## You can view the full docs here:
 https://my-interface.readthedocs.org/
