@@ -8,17 +8,21 @@ Index
 --------------------------------------
 
 ### Prompting Information
-[\<Interface>.prompt()](#prompt)
-[\<Interface>.getQuestion(\<BOOLEAN>)](#getQuestion) ***`DEPRECATED`***
-[\<Interface>.setPrompt(\<STRING>)](#setPrompt)
+[**INTERFACE**.prompt()](#prompt)
+
+[**INTERFACE**.getQuestion(**<BOOLEAN**)](#getQuestion) ***`DEPRECATED`***
+
+[**INTERFACE**.setPrompt(**STRING**)](#setPrompt)
+
 
 ### Activity Information
-[\<Interface>.isActive()](#isActive)
-[\<Interface>.setActive(\<BOOLEAN>)](#setActive)
+[**INTERFACE**.isActive()](#isActive)
+
+[**INTERFACE**.setActive(**BOOLEAN**)](#setActive)
+
 
 ### Interface Information.
-[\<Module>.getInferface()](#getInterface)
-
+[**INTERFACE_Module**.getInferface()](#getInterface)
 
 
 ### prompt
