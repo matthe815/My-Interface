@@ -66,4 +66,4 @@ Other Information
 
 And you can join the Discord Server with:
 
-[Discord Link](https://discord.gg/QKwQdgX)
+[https://discord.gg/QKwQdgX](https://discord.gg/QKwQdgX)
