@@ -48,10 +48,7 @@ inter.getQuestion(true)
 Other Information
 ------------------------------------------
 
-### You can view the full docs here:
-https://my-interface.readthedocs.org/
-
-### And you can join the Discord Server with:
+### You can join the Discord Server with:
 https://discord.gg/QKwQdgX
 
 Thanks!
