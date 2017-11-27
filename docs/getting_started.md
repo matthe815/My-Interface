@@ -8,7 +8,7 @@ Welcome to My Interface!
 
 The easiest way to integrate Console Commands into your NodeJS project.
 
-It's very simple to use, just install it with `npm install my-interface` and add a few lines of code, and it will be fully functional.
+It's very simple to use, just install it with `npm install my-interface`, add a few lines of code, and it will be fully functional.
 
 View the example below to see how to get started.
 
@@ -47,7 +47,6 @@ Version 0.0.3 has introduced the ability to change the prompt text, and added ar
 This will internally save the information you've told it to change.
 
 If you want to check if the system is active, you can do:
-
 `inter.isActive();`
 
 And it will return true/false depending on the active status.
@@ -56,8 +55,6 @@ Notes
 ------------------------------------------
 
 `inter.getQuestion(isForced)` has been changed to `inter.prompt()` in version 0.0.3, getQuestion will still work for a little while however.
-
-This no longer applies in version 0.0.3, it will always activate when called.
 
 0.0.3 added arguments to the mix, so keep that in mind.
 
@@ -69,4 +66,4 @@ Other Information
 
 And you can join the Discord Server with:
 
-https://discord.gg/QKwQdgX
+[Discord Link](https://discord.gg/QKwQdgX)
