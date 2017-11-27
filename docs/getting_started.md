@@ -50,5 +50,3 @@ Other Information
 
 ### You can join the Discord Server with:
 https://discord.gg/QKwQdgX
-
-Thanks!
