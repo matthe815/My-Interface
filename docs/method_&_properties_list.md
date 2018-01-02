@@ -29,7 +29,7 @@ Index
 
 [**PROMPT**.getPrompt()](#getPrompt)
 
-[**PROMPT**.setText(**STRING**)(#setText)
+[**PROMPT**.setText(**STRING**)](#setText)
 
 ### Activity Information
 [**INTERFACE**.setActive(**BOOLEAN**)](#setactive)
