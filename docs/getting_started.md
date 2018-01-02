@@ -10,7 +10,7 @@ and add a few lines of code, and it will be fully functional.
 
 View the example below to see how to get started.
 
-Example:
+Example
 --------------------------------
 
 ```js
@@ -60,11 +60,11 @@ inter.isActive()
 And it will return true/false depending on the active status.
 
 
-Notes:
+Notes
 -------------------------------------
 Prompt Information storage has been slightly modified since 0.0.5.
 
-## And you can join the Discord Server with:
+And you can join the Discord Server with:
 https://discord.gg/QKwQdgX
 
 Thanks!
