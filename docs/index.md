@@ -5,7 +5,7 @@ Welcome to the official My-Interface Documentation!
 
 Here you can find information on various things about the module!
 
-Getting started.
+Getting started
 ---------------------------------------
 
 To learn how to get started, view the page: [***Getting Started***](https://my-interface.readthedocs.io/en/master/getting_started#implementation) (The next page).
