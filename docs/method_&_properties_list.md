@@ -7,7 +7,7 @@ It's all categorized by usage, so feel free to go to what you want.
 Index
 --------------------------------------
 
-#### PROPERTIES
+## PROPERTIES
 
 ### Interface Properties
 [**INTERFACE**.prompts](#propPrompts)
@@ -17,7 +17,7 @@ Index
 ### Prompts Properties
 [**PROMPTS**.active](#propActive)
 
-#### METHODS
+## METHODS
 
 ### Prompting Information
 [**INTERFACE**.prompt()](#prompt)
