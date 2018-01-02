@@ -1,7 +1,7 @@
 Getting Started
 =================================
 
-## Introduction
+Introduction
 ---------------------------------
 The easiest way to integrate Console Commands into your NodeJS project.
 
@@ -10,7 +10,7 @@ and add a few lines of code, and it will be fully functional.
 
 View the example below to see how to get started.
 
-## Example:
+Example:
 --------------------------------
 
 ```js
@@ -60,7 +60,7 @@ inter.isActive()
 And it will return true/false depending on the active status.
 
 
-## Notes:
+Notes:
 -------------------------------------
 Prompt Information storage has been slightly modified since 0.0.5.
 
