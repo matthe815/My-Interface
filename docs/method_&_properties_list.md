@@ -1,4 +1,4 @@
-Method/Property List
+Method & Properties List
 ======================================
 
 Here is a list of methods & properties for you to use within your project!
