@@ -8,10 +8,10 @@ View the example below to see how to get started.
 
 ## Example:
 ```js
-const inter = require('my-interface');
-const em = inter.getInterface();
+const MyInterface = require('my-interface');
+const inter = new MyInterface.Interface();
 
-em.on('command', (cmd, args) => {
+inter.on('command', (cmd, args) => {
     if (cmd == "ping")
 	{
 	    console.log("Pong!");
@@ -19,7 +19,7 @@ em.on('command', (cmd, args) => {
 });
 ```
 
-Note: 0.0.3 added arguments to the mix, so keep that in mind.
+My Interface 0.0.6+ is object oriented! Making it even easier to implement Console Commands into your program!
 
 The code above will case a simple command line interface that you can type "ping" into in order for it to reply pong.
 Once you use the command, it will be ready for another command to be inputed.
@@ -35,12 +35,6 @@ to enable/disable the command system. And you can forcefully request another com
 ```js
 inter.prompt()
 ```
-
-Note: inter.getQuestion(isForced) has been changed to inter.prompt() in version 0.0.3, getQuestion will still work for a little while however.
-
-"true" meaning the command will be forced, regardless if the system is active or not.
-
-Note: This no longer applies in version 0.0.3, it will always activate when called.
 
 Version 0.0.3 has introduced the ability to change the prompt text, and added arguments that are passed along in an array.
 You can change the prompt text by doing:

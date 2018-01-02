@@ -1,38 +1,32 @@
 var fs = require("fs");
-var data = {"text" : "Input a command", "inputNumber" : 0};
 
-class PromptInfo {}
+class PromptInfo {
+	
+	constructor()
+	{
+		this.text = "Input a command";
+		this.usages = 0;
+		this.active = true;
+	}
 
-exports.PromptInfo = function(defaultText="Input a command")
-{
-    // Set the new text.
-    data["text"] = defaultText;
+	getUseTimes()
+	{
+		// Return the amount of uses.
+		return this.usages;
+	}
 	
-    // Save the data internally.
-    if (!fs.existsSync("/data")) { fs.mkdir("/data") };
+	getPrompt()
+	{
+		// Return the current text.
+		return this.text;
+	}
 	
-    fs.writeFileSync("./data/savedData.json", JSON.stringify(data));
+	setText(text)
+	{
+		this.text = text;
+		fs.writeFileSync("data/savedData.json", JSON.stringify({ "text" : this.text }));
+	}
+	
 }
 
-exports.getUseTimes = function()
-{
-    // Return the amount of uses.
-    return data["inputNumber"];
-}
-
-exports.getPrompt = function()
-{
-    // Return the current text.
-    return data["text"];
-}
-
-exports.setText = function(newText)
-{
-    // Set the new text.
-    data["text"] = newText;
-	
-    // Save the data internally.
-    if (!fs.existsSync("/data")) { fs.mkdir("/data") };
-	
-    fs.writeFileSync("./data/savedData.json", JSON.stringify(data));
-}
+module.exports = PromptInfo;

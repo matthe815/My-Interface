@@ -1,6 +1,6 @@
 {
   "name": "my-interface",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A simple interface for you to use when using your NodeJS program.",
   "main": "index.js",
   "scripts": {
