@@ -15,7 +15,7 @@ Index
 [**INTERFACE**.options](#propOptions)
 
 ### Prompts Properties
-[**Prompts**.active](#propActive)
+[**PROMPTS**.active](#propActive)
 
 #### METHODS
 
