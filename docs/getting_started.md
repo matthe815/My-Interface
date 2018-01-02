@@ -1,27 +1,23 @@
 Getting Started
-==================================
+=================================
 
 Introduction
-----------------------------------
-
-Welcome to My Interface!
-
+---------------------------------
 The easiest way to integrate Console Commands into your NodeJS project.
 
-It's very simple to use, just install it with `npm install my-interface`, add a few lines of code, and it will be fully functional.
+It's very simple to use, just install it with "npm install my-interface"
+and add a few lines of code, and it will be fully functional.
 
 View the example below to see how to get started.
 
-Implementation
----------------------------------
-
-### Example:
+Example:
+--------------------------------
 
 ```js
-const inter = require('my-interface');
-const em = inter.getInterface();
+const MyInterface = require('my-interface');
+const inter = new MyInterface.Interface();
 
-em.on('command', (cmd, args) => {
+inter.on('command', (cmd, args) => {
     if (cmd == "ping")
 	{
 	    console.log("Pong!");
@@ -29,41 +25,46 @@ em.on('command', (cmd, args) => {
 });
 ```
 
-The code above will case a simple command line interface that you can type "ping" into in order for it to reply pong. Once you use the command, it will be ready for another command to be inputed.
+My Interface 0.0.6+ is object oriented! Making it even easier to implement Console Commands into your program!
+
+The code above will case a simple command line interface that you can type "ping" into in order for it to reply pong.
+Once you use the command, it will be ready for another command to be inputed.
 
 You can ALSO use:
 
-`inter.setActive(true/false);`
-to enable/disable the command system. And you can forcefully request another command using
+```js
+inter.setActive(true/false);
+```
 
-`inter.prompt()`
+to enable/disable the command system. And you can forcefully request another command using 
 
+```js
+inter.prompt()
+```
 
-Changing Prompt Text
-----------------------------------
-Version 0.0.3 has introduced the ability to change the prompt text, and added arguments that are passed along in an array. You can change the prompt text by doing:
+Version 0.0.3 has introduced the ability to change the prompt text, and added arguments that are passed along in an array.
+You can change the prompt text by doing:
 
-`inter.setPrompt("Text goes here.");`
+```js
+inter.setPrompt("Text goes here.");
+```
+
 This will internally save the information you've told it to change.
 
 If you want to check if the system is active, you can do:
-`inter.isActive();`
+
+```js
+inter.isActive()
+```
 
 And it will return true/false depending on the active status.
 
-Notes
-------------------------------------------
 
-`inter.getQuestion(isForced)` has been changed to `inter.prompt()` in version 0.0.3, getQuestion will still work for a little while however.
-
-0.0.3 added arguments to the mix, so keep that in mind.
-
+Notes:
+-------------------------------------
 Prompt Information storage has been slightly modified since 0.0.5.
 
+## And you can join the Discord Server with:
+https://discord.gg/QKwQdgX
 
-Other Information
-------------------------------------------
-
-And you can join the Discord Server with:
-
-[https://discord.gg/QKwQdgX](https://discord.gg/QKwQdgX)
+Thanks!
